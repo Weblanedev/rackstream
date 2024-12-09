@@ -30,13 +30,13 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const layout: Layout = {
     header: {
       type: 1,
-      hasBannerAd: false, // TODO
+      hasBannerAd: false,
     },
-    hero: 1,
+    hero: 2,
     main: {
       //   order:'',
       categoryBanner: 1,
-      categoryArea: 1,
+      // categoryArea: 1,
 
       hasTestimonials: false,
       hasNewsletter: false,
@@ -46,7 +46,7 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
     footer: {
       type: 1,
       // level: 1,
-      hasNewsletter: false, // TODO
+      hasNewsletter: false,
     },
   };
 
@@ -102,8 +102,6 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
     setNiceSelectData,
     layout,
   };
-
-  console.log({ layout_in_context: layout });
 
   return (
     <AppContext.Provider value={contextValue}>{children}</AppContext.Provider>

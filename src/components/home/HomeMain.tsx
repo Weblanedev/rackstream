@@ -24,7 +24,6 @@ import NewsLetterSection from './NewsLetterSection';
 // import { layout } from '@/app/layout';
 const HomeMain = () => {
   const { layout } = useGlobalContext();
-  console.log({ layout });
 
   return (
     <>

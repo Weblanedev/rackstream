@@ -50,7 +50,7 @@ export interface Layout {
   hero: 1 | 2 | 3;
   main: {
     categoryBanner: 1 | 2;
-    categoryArea: 1 | 2 | 3;
+    categoryArea?: 1 | 2 | 3;
 
     // optional
     hasBlog: boolean;

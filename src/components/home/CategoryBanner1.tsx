@@ -5,43 +5,39 @@ import Link from 'next/link';
 import banner1 from '../../../public/assets/img/category_banner/category-banner1.jpg';
 import banner2 from '../../../public/assets/img/category_banner/category-banner2.jpg';
 import banner3 from '../../../public/assets/img/category_banner/category-banner3.jpg';
-import banner4 from '../../../public/assets/img/category_banner/category-banner4.jpg';
+import banner4 from '../../../public/assets/img/category_banner/category-banner4.webp';
 import menu_data from '@/data/menu-data';
 
 const CategoryBanner1 = () => {
   const banners = [
     {
-      // img: '/assets/img/category_banner/household_stuff.jpg',
       title: menu_data[1].submenus?.[0].title,
-      desc: 'Discover the latest collection of household items',
+      desc: 'Find your new favorite artists and songs.',
     },
     {
-      // img: '/assets/img/category_banner/parenting.png',
       title: menu_data[1].submenus?.[1].title,
-      desc: 'Explore our collection of parenting essentials',
+      desc: 'Explore our collection of playlists and radio stations.',
     },
     {
-      // img: '/assets/img/category_banner/tools.png',
       title: menu_data[1].submenus?.[2].title,
-      desc: 'Browse our selection of tools and gadgets',
+      desc: 'Listen to your favorite artists and genres.',
     },
     {
-      // img: '/assets/img/category_banner/household_items.jpg',
       title: menu_data[1].submenus?.[3].title,
-      desc: 'Find the perfect home decor for your needs',
+      desc: 'View your saved songs and playlists.',
     },
   ];
 
   return (
     <>
-      <div className="category-banner-area pt-30">
+      <div className="category-banner-area pt-30 pb-30">
         <div className="container">
           <div className="row">
             <div className="col-xl-4 col-lg-6 col-md-6">
-              <div className="category-banner-single mb-30 pos-rel">
-                <div className="category-banner-img">
+              <div className="category-banner-single mb-30 pos-rel h-100">
+                <div className="category-banner-img h-100">
                   <Image
-                    style={{ width: '100%', height: 'auto' }}
+                    style={{ width: '100%', height: '100%' }}
                     src={banner1}
                     alt="banner-img"
                   />
@@ -60,10 +56,10 @@ const CategoryBanner1 = () => {
               </div>
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6 order-xl-3">
-              <div className="category-banner-single mb-30 pos-rel">
-                <div className="category-banner-img">
+              <div className="category-banner-single mb-30 pos-rel h-100">
+                <div className="category-banner-img h-100">
                   <Image
-                    style={{ width: '100%', height: 'auto' }}
+                    style={{ width: '100%', height: '100%' }}
                     src={banner4}
                     alt="banner-img"
                   />
@@ -109,7 +105,7 @@ const CategoryBanner1 = () => {
                   <div className="category-banner-single mb-30 pos-rel">
                     <div className="category-banner-img">
                       <Image
-                        style={{ width: '100%', height: 'auto' }}
+                        style={{ width: '100%', height: '100%' }}
                         src={banner3}
                         alt="banner-img"
                       />

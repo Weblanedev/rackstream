@@ -10,10 +10,10 @@ const menu_data: MenuType[] = [
   },
   {
     id: 2,
-    hasDropdown: true,
+    hasDropdown: false,
     megaMenu: true,
     active: true,
-    title: 'Menu',
+    title: 'Listen',
     link: '#',
     submenus: [
       // {
@@ -29,10 +29,10 @@ const menu_data: MenuType[] = [
       //   //   { title: 'Group Product', link: '/group-product' },
       //   // ],
       // },
-      { title: 'Category 01', link: '/' },
-      { title: 'Category 02', link: '/' },
-      { title: 'Category 03', link: '/' },
-      { title: 'Category 04', link: '/' },
+      { title: 'Discover', link: '/' },
+      { title: 'Browse', link: '/' },
+      { title: 'Radio', link: '/' },
+      { title: 'Library', link: '/' },
     ],
   },
   {

@@ -6,9 +6,9 @@ import 'swiper/css/bundle';
 import banner4 from '../../../public/assets/img/slider-img/banner-01.png';
 import banner5 from '../../../public/assets/img/slider-img/banner-02.png';
 import banner6 from '../../../public/assets/img/slider-img/banner-03.png';
-import bannerBg from '../../../public/assets/img/slider-img/banner-bg-1.png';
+import bannerBg from '../../../public/assets/img/slider-img/banner-bg-1.jpg';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 const HeroBanner2 = () => {
   const [activeIndex, setActiveIndex] = useState(0); // State to track active slide index
 
@@ -20,20 +20,20 @@ const HeroBanner2 = () => {
     {
       id: 1,
       bgImg: banner4,
-      tagOne: 'Fast Delivery',
-      tagTwo: 'Hot Food Delivered To You',
+      tagOne: 'New Music',
+      tagTwo: 'All Genres. All Artists. All In One Place.',
     },
     {
       id: 2,
       bgImg: banner5,
       tagOne: 'On Trending',
-      tagTwo: 'Food For All Seasons',
+      tagTwo: 'Discover The Latest Music Trends',
     },
     {
       id: 3,
       bgImg: banner6,
-      tagOne: 'Featured Service',
-      tagTwo: 'Perfect Food Delivery. Unique Experience',
+      tagOne: 'Featured Playlist',
+      tagTwo: 'Curated Playlists. Perfect Vibes.',
     },
   ];
   return (
@@ -78,19 +78,22 @@ const HeroBanner2 = () => {
                           </span>
                           <h1 className="banner-title">{item?.tagTwo}</h1>
                           <div className="banner-btn">
-                            <Link className="fill-btn" href="/contact">
-                              Shop Now
+                            <Link
+                              className="fill-btn text-black"
+                              href="/contact"
+                            >
+                              Start Listening
                             </Link>
                           </div>
                         </div>
                       </div>
-                      <div className="col-xxl-5 col-xl-5 col-lg-5">
+                      {/* <div className="col-xxl-5 col-xl-5 col-lg-5">
                         <div className="banner-thumb-wrapper pos-rel">
                           <div className="banner-thumb-2">
                             <Image src={item?.bgImg} alt="banner-4" />
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 )}
